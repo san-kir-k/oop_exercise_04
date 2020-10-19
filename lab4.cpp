@@ -24,9 +24,11 @@ void help() {
 void mainLoop() {
     int command = 0;
     std::string s;
+    // создаем tuple из шести фигур (каждая фигура типа int и double)
     std::tuple<Triangle<int>, Square<int>, Octagon<int>, Triangle<double>, Square<double>, Octagon<double> > t =
     {Triangle<int>({0, 0}, {0, 1}), Square<int>({0, 0}, {2, 2}), Octagon<int>({0, 0}, {0, 1}),
     Triangle<double>({0.0, 0.0}, {0.0, 1.0}),  Square<double>({0.0, 0.0}, {2.0, 2.0}), Octagon<double>({0.0, 0.0}, {0.0, 1.0})};
+    // парсер команд
     while (std::cout << "Cmd: " && std::cin >> s) {
         if (s.length() > 1) {
             std::cout << "Invalid command." << std::endl;
