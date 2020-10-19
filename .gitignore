@@ -34,3 +34,7 @@
 # Mine
 lab4
 .vscode
+CMakeFiles
+cmake_*
+CMakeCache.txt
+Makefile
