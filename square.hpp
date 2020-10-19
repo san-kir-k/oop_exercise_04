@@ -58,7 +58,7 @@ void validCheck(Square<T>& f) {
         double angle = 2.0 * M_PI * i / 4.0;
         double next_X = r * cos(angle + phi) + f.center.first;
         double next_Y = r * sin(angle + phi) + f.center.second;
-        if (next_X - static_cast<T>(next_X) > EPSILON || next_Y - static_cast<T>(next_Y) > EPSILON) {
+        if (abs(next_X - static_cast<T>(next_X)) > EPSILON || abs(next_Y - static_cast<T>(next_Y)) > EPSILON) {
             f.valid = false;
         }
         f.path.push_back(std::make_pair(static_cast<T>(next_X), static_cast<T>(next_Y)));
