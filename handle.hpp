@@ -60,13 +60,6 @@ struct Area {
         using Type = typename Figure::type;
         // проверка фигуры на валидность
         if (!f.valid) {
-            if (std::is_same<Figure, Triangle<Type>>::value) {
-                std::cout << "Invalid figure: Triangle<" << typeid(Type).name() << ">" << std::endl;
-            } else if (std::is_same<Figure, Square<Type>>::value) {
-                std::cout << "Invalid figure: Square<" << typeid(Type).name() << ">" << std::endl;
-            } else {
-                std::cout << "Invalid figure: Octagon<" << typeid(Type).name() << ">" << std::endl;
-            }
             return;
         } // конец проверки фигуры на валидность
         double r = sqrt((f.v.first - f.center.first) * (f.v.first - f.center.first) +
