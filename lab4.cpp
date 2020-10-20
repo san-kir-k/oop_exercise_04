@@ -8,7 +8,7 @@
 #include "octagon.hpp"
 #include "square.hpp"
 #include "triangle.hpp"
-#include "handle.hpp"
+#include "tuple_handler.hpp"
 
 //
 // мануал
@@ -41,11 +41,11 @@ void mainLoop() {
         switch (command) {
             case 1:
                 std::cout << "=============================TUPLE_START=============================\n";
-                printTuple(t);
+                printTuple<decltype(t),0>(t);
                 std::cout << "==============================TUPLE_END==============================\n";
                 break;
             case 2:
-                std::cout << "Total tuple area is: " << getTotalArea(t) << std::endl;
+                std::cout << "Total tuple area is: " << getTotalArea<decltype(t),0>(t) << std::endl;
                 break;
             case 3:
                 help();
