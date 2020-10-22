@@ -32,17 +32,17 @@ tupleCreat() {
         std::cout << "Input error.\n";
     }
     std::cout << "Enter center and vertex of Square<double>:\n";
-    int c2_x, v2_x, c2_y, v2_y;
+    double c2_x, v2_x, c2_y, v2_y;
     if (!(std::cin >> c2_x >> c2_y >> v2_x >> v2_y)) {
         std::cout << "Input error.\n";
     }
     std::cout << "Enter center and vertex of Square<size_t>:\n";
-    int c3_x, v3_x, c3_y, v3_y;
+    size_t c3_x, v3_x, c3_y, v3_y;
     if (!(std::cin >> c3_x >> c3_y >> v3_x >> v3_y)) {
         std::cout << "Input error.\n";
     }
     std::cout << "Enter center and vertex of Triangle<double>:\n";
-    int c4_x, v4_x, c4_y, v4_y;
+    double c4_x, v4_x, c4_y, v4_y;
     if (!(std::cin >> c4_x >> c4_y >> v4_x >> v4_y)) {
         std::cout << "Input error.\n";
     }
@@ -52,7 +52,7 @@ tupleCreat() {
         std::cout << "Input error.\n";
     }
     std::cout << "Enter center and vertex of Octagon<double>:\n";
-    int c6_x, v6_x, c6_y, v6_y;
+    double c6_x, v6_x, c6_y, v6_y;
     if (!(std::cin >> c6_x >> c6_y >> v6_x >> v6_y)) {
         std::cout << "Input error.\n";
     }
